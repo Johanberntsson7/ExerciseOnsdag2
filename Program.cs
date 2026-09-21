@@ -4,11 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Animal animal1 = new Animal();
-            animal1.Sleep();
+          Employee employee1 = new Employee("Johan");
+            Console.WriteLine(employee1.Name);
+    
+                Vehicle vehicle1 = new Vehicle();
+                vehicle1.StartaMotor();
+    
+                Bil bil1 = new Bil();
+                bil1.StartaMotor();
+    
+                Motorcykel motorcykel1 = new Motorcykel();
+                motorcykel1.StartaMotor();
 
-            Bat bat1 = new Bat();
-            bat1.Sleep();
+            MountainBike mountainBike1 = new MountainBike();
+            mountainBike1.Brake();
         }
     }
 }
