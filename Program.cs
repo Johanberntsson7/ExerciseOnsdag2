@@ -4,27 +4,11 @@
     {
         static void Main(string[] args)
         {
-            // Här skapar jag ett objekt av typen Spelare
-            Spelare spelare1 = new Spelare("Johan", 10);
-            spelare1.Springa();
-        }
-    }
+            Animal animal1 = new Animal();
+            animal1.Sleep();
 
-    // Här är klassen Spelare
-    public class Spelare
-    {
-        public string Namn { get; set; }
-        public int TrojNummer { get; set; }
-
-        public Spelare(string namn, int trojNummer)
-        {
-            Namn = namn;
-            TrojNummer = trojNummer;
-        }
-
-        public void Springa()
-        {
-            Console.WriteLine($"{Namn} springer");
+            Bat bat1 = new Bat();
+            bat1.Sleep();
         }
     }
 }
